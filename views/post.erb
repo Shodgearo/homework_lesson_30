@@ -1,0 +1,38 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4"><%= @post.name %></h1>
+	<hr class="my-4">
+    <p class="lead">
+    	<%= @post.text %>
+	</p>
+  </div>
+
+	
+</div>
+
+<p>
+	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+		Comment
+	</button>
+</p>
+
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+
+  	<div class="col-md-4 mb-3">
+	      <label for="validationCustom01">Name</label>
+	      <input type="text" class="form-control" name="form[name]" id="validationCustom01" placeholder="Your name" value="">
+	</div>
+
+	<div class="form-group">
+		<label for="exampleFormControlTextarea1">Example textarea</label>
+		<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+	</div>
+
+	<p>
+		<button class="btn btn-primary" type="submit">Add</button>
+	</p>
+  </div>
+</div>
+
+<br>

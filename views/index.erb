@@ -1,2 +1,14 @@
 <br>
-<h1>Астроблог</h1>
+<div align="center" class="alert alert-warning">
+  <h1>Astrablog</h1>
+</div>
+
+<% @posts.each do |post| %>
+	<p>
+		<div class="jumbotron">
+		  <h1 class="display-4"><%= post.name %></h1>
+		  <hr class="my-4">
+		  <a class="btn btn-primary btn-lg" href="/post/<%= post.id %>" role="button">Learn more</a>
+		</div>
+	</p>
+<% end -%>
